@@ -12,7 +12,7 @@ function Blogs() {
   const BlogStyle = {
     border: 0,
     width: '90%',
-    textAlign:'justify',
+    textAlign:'left',
     margin: "10px auto",
     padding:"5px"
   };
