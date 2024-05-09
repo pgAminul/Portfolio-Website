@@ -2,6 +2,7 @@
   background-color: black;
   border-top: 2px solid gray;
   padding: 10px 0px 10px 0px;
+  overflow: hidden;
 }
 
 .prtfolioText {
