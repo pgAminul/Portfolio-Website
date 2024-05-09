@@ -20,7 +20,7 @@ function Protfolio() {
           return <div data-aos="fade-up"
           data-aos-duration="2000" className='ProtfolioChild'key={uuidv4()}>
           <center>
-          <img data-aos="zoom-in" className='protfolioImages' src={img} alt="" />
+          <img  className='protfolioImages' src={img} alt="" />
           <div className="protfolioFoterText">
           <p className='ProtfollioFooter'>{text}</p>
 
