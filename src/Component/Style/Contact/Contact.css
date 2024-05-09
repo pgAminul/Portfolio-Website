@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.formError {
+  color: red;
+  text-align: left;
+}
+
+.contactHeader {
+  background-image: url("./Images/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contactHeader .ContainerHeaderChild {
+  border-top: 3px solid gray;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.612));
+  width: 100%;
+}
+.contactHeader .ContactTitle {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  padding-top: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-style: normal;
+}
+
+.forForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.forForm form input {
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.737);
+  color: black;
+}
+.forForm form textarea {
+  width: 50%;
+  margin-top: 10px;
+  height: 100px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.737);
+  color: black;
+  resize: none;
+  overflow: hidden;
+}
+.forForm form button {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+.forForm form button:hover {
+  background-color: red;
+  border: 1px solid red;
+}
+@media (max-width: 800px) and (min-width: 400px) {
+  .forForm form input {
+    width: 80%;
+  }
+  .forForm form textarea {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .forForm form input {
+    width: 95%;
+  }
+  .forForm form textarea {
+    width: 95%;
+  }
+}
+.forForm .SocialMedia {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.forForm .SocialMedia a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.5s;
+}
+.forForm .SocialMedia .icons {
+  transition: 0.5s;
+}
+.forForm .SocialMedia a:hover .icons {
+  transform: translateY(-10px);
+}
+.forForm .SocialMedia .facebook {
+  color: #1298F0;
+}
+.forForm .SocialMedia .instagram {
+  height: 30px;
+  margin-top: 2px;
+}
+.forForm .SocialMedia .linkedin {
+  color: #0073B1;
+}
+.forForm .SocialMedia .whatsapp {
+  color: #00BD07;
+}
+.forForm .SocialMedia .telegram {
+  color: #27A3E2;
+}
+@media (max-width: 390px) {
+  .forForm .SocialMedia a {
+    padding: 0px;
+  }
+}/*# sourceMappingURL=Contact.css.map */

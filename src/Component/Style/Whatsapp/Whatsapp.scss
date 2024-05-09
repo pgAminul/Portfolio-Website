@@ -1,0 +1,32 @@
+.whatsappForcontact{
+    display: flex;
+    position: fixed;
+    cursor: pointer;
+   bottom: 0;
+   left: 10px;
+    z-index: 1000;
+    a{
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+    }
+
+    p{
+        font-size: 15px;
+        margin-top: 2px;
+        border-radius: 8px;
+        padding:7px 7px;
+        background-color: rgba(51, 128, 40, 0.579);
+        font-weight: bold;
+        .FontAwesomeIcon{
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+            padding-left: 5px;
+        }
+    }
+}

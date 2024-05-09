@@ -1,0 +1,195 @@
+.protfolioHeader {
+  background-color: black;
+  border-top: 2px solid gray;
+  padding: 10px 0px 10px 0px;
+}
+
+.prtfolioText {
+  text-align: center;
+  padding-top: 10px;
+  background-image: linear-gradient(to right, rgb(23, 255, 247), rgb(227, 227, 227), rgb(30, 255, 38));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ProtfolioSecondHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  padding: 15px 0px 10px 0px;
+}
+
+.ProtfolioChild {
+  flex-basis: 30%;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px white;
+  z-index: 999;
+}
+
+.protfolioImages {
+  width: 350px;
+  height: 200px;
+  transition: 1s ease-in-out;
+}
+
+.protfolioFoterText {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: none;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.579);
+  top: 0;
+}
+
+.ProtfollioFooter {
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+.ProtfolioChild:hover .protfolioImages {
+  transform: scale(1.4);
+}
+
+.ProtfolioChild:hover .protfolioFoterText {
+  display: block;
+}
+
+.HeaderCounter {
+  margin: 15px 10px 0px 10px;
+  background-color: rgb(19, 19, 13);
+  border-radius: 10px;
+  box-shadow: 2px 2pz 3pz;
+}
+
+.CounterHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.CounterChildHeader {
+  padding: 10px;
+  text-align: center;
+}
+
+.gifImage {
+  width: 80px;
+}
+
+.Counter {
+  color: white;
+  font-size: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.CounterFoter {
+  color: white;
+  margin-top: 10px;
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgb(23, 255, 247), rgb(227, 227, 227), rgb(30, 255, 38));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, rgb(208, 255, 0), rgb(227, 227, 227), rgb(30, 255, 38));
+}
+
+@media (max-width: 1100px) and (min-width: 800px) {
+  .protfolioImages {
+    width: 300px;
+    height: 170px;
+  }
+  .ProtfolioChild {
+    flex-basis: 40%;
+  }
+}
+@media (max-width: 800px) and (min-width: 700px) {
+  .protfolioImages {
+    width: 250px;
+    height: 130px;
+  }
+  .ProtfolioChild {
+    flex-basis: 40%;
+  }
+  .ProtfollioFooter {
+    margin-top: 70px;
+  }
+  .gifImage {
+    width: 50px;
+  }
+  .Counter {
+    font-size: 25px;
+  }
+  .CounterFoter {
+    font-size: 25px;
+  }
+}
+@media (max-width: 700px) and (min-width: 500px) {
+  .protfolioImages {
+    width: 200px;
+    height: 100px;
+  }
+  .ProtfolioChild {
+    flex-basis: 40%;
+  }
+  .ProtfollioFooter {
+    margin-top: 50px;
+  }
+  .gifImage {
+    width: 40px;
+  }
+  .Counter {
+    font-size: 20px;
+  }
+  .CounterFoter {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .CounterHeader {
+    display: block;
+  }
+  .gifImage {
+    width: 40px;
+  }
+  .Counter {
+    font-size: 25px;
+  }
+  .CounterFoter {
+    font-size: 22px;
+  }
+  .ProtfolioChild {
+    flex-basis: 80%;
+  }
+  .protfolioImages {
+    width: 100%;
+    height: 180px;
+  }
+  .ProtfollioFooter {
+    margin-top: 25%;
+  }
+}
+@media (max-width: 400px) {
+  .protfolioImages {
+    height: 150px;
+  }
+  .prtfolioText {
+    font-size: 35px;
+  }
+}/*# sourceMappingURL=Protfolio.css.map */

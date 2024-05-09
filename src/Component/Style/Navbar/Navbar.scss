@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Bungee+Spice&family=Itim&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&family=Shadows+Into+Light&display=swap');
+
+
+@mixin Flex{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgba(0, 0, 0, 0.046);
+   background-color: rgba(3, 3, 3, 0.402);
+    
+}
+@mixin NavBg{
+    background-image: url('/Images/nav.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav{
+     @include Flex();
+
+}
+
+
+.Container{
+   @include Flex;
+   width: 100%;
+
+  
+}
+.MainLogo{
+    width: 80px;
+    display: block;
+    float: left;
+    margin-left: 50px;
+}
+.Link{
+    text-decoration: none;
+    margin: 12px;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    transition:0.5s;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    padding: 12px;
+    opacity: 0.80;
+   
+}
+.Link:hover{
+    opacity: 1;
+}
+.navLink{
+    margin: auto;
+    transition: all 0.5s ease;
+    
+
+}
+.resoinsiveIcon{
+    margin: auto;
+    color: white;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logo{
+    margin-left: 20px;
+
+}
+.Link.active{
+    color: #f6ff00;
+}
+@media(max-width:800px) and (min-width:762px){
+    .Link{
+        font-size: 22px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 761px) {
+    .Link:hover.active{
+        color: white;
+        background-color: rgb(13, 41, 255);
+    }
+    .Link:hover{
+        background-color: rgba(0, 255, 115, 0.59);
+       border-radius: 15px;
+       transform: scale(1.2);
+    
+    
+     }
+    .navLink.show {
+        display: block; 
+       transform: none;
+        
+
+      }
+      .resoinsiveIcon.close{
+        font-size: 23px;
+        font-weight: 500;
+      }
+      .MainLogo{
+        margin-left: 0px;
+      }
+ .Container{
+    grid-template-columns: auto;
+    height: 80px;
+
+ }
+ .bgnav{
+    background-color: rgba(0, 0, 0, 0.197);
+   padding: 20px;
+   z-index:1000;
+
+width: 100%;
+position: fixed
+
+
+ }
+ .navLink{
+    width: 100%;
+   border-top: 2px solid white;
+   top: 0;
+   left: 0;
+   height: 100%;
+   transition: 0.5s ease-in-out;
+   transform: translateY(-100vh);
+   background-color: rgba(0, 0, 0, 0.397);
+
+ }
+
+ .Link{
+    display: block;
+    font-size:18px;
+    padding: 4px;
+    margin: 0px;
+    width: 50%;
+    margin: auto;
+    font-family:'Poppins';
+
+ }
+ .resoinsiveIcon{
+    float: right;
+    display: block;
+    margin: 30px 15px 0px 0px;
+    font-size: 20px;
+ }
+}

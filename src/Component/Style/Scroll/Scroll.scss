@@ -1,0 +1,39 @@
+
+ .mainScroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+    .scroolToUp{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        color: white;
+        margin-right: 5px;
+        font-size: 2rem;
+        bottom: 10px;
+        right: 0;
+        z-index: 1001;
+
+    }
+    .iconUp{
+        animation-name: example;
+        transition: 0.5s;
+        animation-duration: 2s;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        background-color: red;
+
+    }
+    @keyframes example {
+        100% {
+            transform: translateY(-15px);
+        }
+
+    }

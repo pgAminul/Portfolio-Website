@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.serviceHeaderContent {
+  text-align: center;
+  color: white;
+  margin: 5px 0px 30px 0px;
+  font-weight: 400;
+  background-image: linear-gradient(to right, rgb(239, 255, 13), rgb(227, 227, 227), rgb(255, 247, 11));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.serviceBody {
+  color: white;
+}
+
+.ServicesHeader {
+  background-color: black;
+  border-top: 3px solid gray;
+  padding: 20px 10px 30px 10px;
+}
+
+.ServiceCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.CardMain {
+  background-color: black;
+  padding: 10px;
+  box-shadow: 2px 3px 2px;
+  transition: 0.5s;
+}
+
+.CardMain:hover {
+  background-color: rgb(2, 7, 11);
+}
+
+.CardMain:hover .serviceImg {
+  transform: scale(1.2);
+}
+
+.serviceImages {
+  margin: 10px auto;
+  position: relative;
+  width: 50%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.serviceImg {
+  position: absolute;
+  transition: 1s ease-in-out;
+}
+
+.ServiceBtn {
+  border: none;
+  background-color: red;
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+  .ServiceCard {
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  .serviceImages {
+    width: 65%;
+    height: 200px;
+  }
+}
+@media (max-width: 700px) and (min-width: 600px) {
+  .ServiceCard {
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+  .serviceImages {
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  .ServiceCard {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  .serviceImages {
+    width: 70%;
+  }
+}/*# sourceMappingURL=Servicess.css.map */

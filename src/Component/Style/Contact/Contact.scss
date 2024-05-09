@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+@mixin border{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.737);
+    color: black;
+}
+.formError{
+    color: red;
+    text-align: left;
+    
+}
+.contactHeader{
+    background-image: url('./Images/contact.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+    .ContainerHeaderChild{
+        border-top: 3px solid gray;
+        background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.612));
+        width: 100%;
+    }
+    .ContactTitle{
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        padding-top: 10px;
+        margin-top: 10px;
+
+        text-align: center;
+        font-style: normal;
+    }
+}
+
+.forForm{
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        input{
+            width: 50%;
+            margin-top: 10px;
+            @include border();
+        }
+        textarea{
+            width: 50%;
+            margin-top: 10px;
+            height: 100px;
+            @include border();
+            resize: none;
+            overflow: hidden;
+        }
+        button{
+            margin-top: 10px;
+            padding: 8px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            outline: none;
+            font-size: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: red;
+            border: 1px solid red;
+        }
+        @media (max-width:800px)and (min-width:400px){
+            input{
+                width: 80%;
+
+            }
+            textarea{
+                width:80%
+            }
+        }
+        @media (max-width:400px){
+            input{
+                width: 95%;
+            }
+            textarea{
+                width: 95%;
+            }
+        }
+    }
+    .SocialMedia{
+        text-align: center;
+        padding-bottom: 25px;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            margin: 10px;
+            padding: 10px;
+            transition: 0.5s;
+          
+        }
+        .icons{
+            transition: 0.5s;
+        }
+        a:hover .icons{
+            transform: translateY(-10px);
+        }
+        .facebook{
+            color: #1298F0;
+        }
+        .instagram{
+            height:30px;
+            margin-top: 2px;
+        }
+        .linkedin{
+            color: #0073B1;
+        }
+        .whatsapp{
+            color: #00BD07;
+        }
+        .telegram{
+            color: #27A3E2;
+        }
+        @media (max-width:390px){
+            a{
+                padding: 0px;
+            }
+        }
+    }
+   
+}
+

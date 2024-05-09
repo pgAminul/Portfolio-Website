@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@mixin textColor{
+    background-image: linear-gradient(to right, rgb(255, 251, 9), rgb(227, 227, 227), rgb(255, 30, 30));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.AboutMeHeader{
+    background-color: black;
+    padding: 10px 0px 20px 0px;
+    border-top: 3px solid gray;
+    color: white;
+    text-align: center;
+    width: 100%;
+    .AboutContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px;
+        div{
+            width: 100%;
+            .AboutImg{
+                height: 320px;
+                width: 200px;
+                padding-top: 20px;
+                background-color: rgb(31, 27, 27);
+                border-radius: 15px;
+              
+            }
+            .AboutName{
+                margin: 20px 0px;
+                font-family: "Briem Hand", cursive;
+                font-optical-sizing: auto;
+            }
+        }
+       
+    }
+    @media (max-width:799px){
+        .AboutContainer{
+            flex-direction: column;
+            div{
+                width: 100%;
+                .AboutImg{
+                    height: 250px;
+                    width: 170px;
+                    padding-top: 20px;
+                    background-color: rgb(31, 27, 27);
+                    border-radius: 15px;
+                  
+                }
+        }
+    }
+       
+    }
+    .AboutMe{
+        margin: 0px 0px 10px 0px ;
+        padding: 10px;
+        @include textColor();
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+    }
+  
+
+    .AboutDescription{
+        text-align: left;
+        padding: 0px 10px 0px 10px;
+        .ShowMore{
+            color: gray;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    }
+    
+}

@@ -1,0 +1,271 @@
+
+.HeaderSkill{
+   margin: 20px 0px;
+   background-color: rgba(0, 0, 0, 0.239);
+   padding: 20px;
+   
+}
+.Skills{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+@mixin WH {
+    width: 100%;
+    height: 140px;
+    padding: 10px;
+  
+}
+.SkillChildHeader{
+    @include WH();
+    position: relative;
+    margin: auto;
+    
+}
+.Skill{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+           
+}
+.SkillChildHeader{
+    margin: 20px;
+    
+}
+.outer{
+width: 90px;
+}
+.inner{
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgb(159, 159, 159),
+                inset -4px -4px 6px -1px rgba(133, 127, 127, 0.7),
+                -0.5px -0.5px 0px rgb(132, 132, 132), 
+                -0.5px -0.5px 0px rgb(120, 120, 120),
+                -0.5px -0.5px 0px rgb(128, 128, 128);
+}
+.progressImg{
+    width: 25px;
+}
+.progressText{
+    color: white;
+    font-size: 20px;
+    overflow: hidden
+
+}
+.Svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.skillTag{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+@mixin forHtml{
+   fill: none;
+   stroke-width: 5px; 
+   stroke-dasharray: 302;
+   stroke-dashoffset: 302;
+   stroke:rgba(128, 128, 128, 0.518);
+
+}
+.forHtml{
+    @include forHtml();
+    stroke-dashoffset: 60.8;
+
+}
+   .SkillChildHeader:hover {
+    .forHtml{
+       animation: animHtml 3s linear forwards;
+       stroke:#E54C25;
+          @keyframes animHtml {
+            0%{
+       stroke-dashoffset: 302
+
+            }
+        100%{
+       
+            stroke-dashoffset: 60.8;
+
+    
+        }
+    }
+       }
+   }
+   .forCss{
+    @include forHtml();
+    stroke-dashoffset: 75.8;
+    
+   }
+   .SkillChildHeader:hover {
+
+    .forCss{
+        animation: animCss 2s linear forwards;
+        stroke:#369AD6;
+        @keyframes animCss {
+            0%{
+           stroke-dashoffset: 354;
+            }
+            100%{
+           stroke-dashoffset: 75.8;
+        
+            }
+        }
+        }
+   }
+.forJavascript{
+    @include forHtml();
+    stroke-dashoffset: 65.9;
+}
+.SkillChildHeader:hover {
+
+    .forJavascript{
+        animation: animJava 2s linear forwards;
+        stroke:#FDCD00;
+        @keyframes animJava {
+            0%{
+           stroke-dashoffset: 354;
+            }
+            100%{
+           stroke-dashoffset: 65.9;
+        
+            }
+        }
+        }
+   }
+
+   .forBoostrap{
+    @include forHtml();
+    stroke-dashoffset: 86.4;
+}
+.SkillChildHeader:hover {
+
+    .forBoostrap{
+        animation: animBoos 2s linear forwards;
+        stroke:#26113C;
+        @keyframes animBoos {
+            0%{
+           stroke-dashoffset: 354;
+            }
+            100%{
+           stroke-dashoffset: 86.4;
+        
+            }
+        }
+        }
+   }
+
+   .forScss{
+    @include forHtml();
+    stroke-dashoffset: 98.5;
+}
+.SkillChildHeader:hover {
+
+    .forScss{
+        animation: animScss 2s linear forwards;
+        stroke:#E98CB8;
+        @keyframes animScss {
+            0%{
+           stroke-dashoffset: 354;
+            }
+            100%{
+           stroke-dashoffset: 98.5;
+        
+            }
+        }
+        }
+   }
+
+   .forReact{
+    @include forHtml();
+    stroke-dashoffset: 86.4;
+}
+.SkillChildHeader:hover {
+
+    .forReact{
+        animation: forReact 2s linear forwards;
+        stroke:#7FBEED;
+        @keyframes forReact {
+            0%{
+           stroke-dashoffset: 354;
+            }
+            100%{
+           stroke-dashoffset: 86.6;
+        
+            }
+        }
+        }
+   }
+
+   .forRedux{
+    @include forHtml();
+    stroke-dashoffset: 86.4;
+}
+.SkillChildHeader:hover {
+
+    .forRedux{
+        animation: forRedux 2s linear forwards;
+        stroke:#8629BF;
+        @keyframes forRedux {
+            0%{
+           stroke-dashoffset: 354;
+            }
+            100%{
+           stroke-dashoffset:86.4;
+        
+            }
+        }
+        }
+   }
+
+   .forTypescript{
+    @include forHtml();
+    stroke-dashoffset: 75.8;
+}
+.SkillChildHeader:hover {
+
+    .forTypescript{
+        animation: forTypescript 2s linear forwards;
+        stroke:#0078CF;
+        @keyframes forTypescript {
+            0%{
+           stroke-dashoffset: 354;
+            }
+            100%{
+           stroke-dashoffset:75.8;
+        
+            }
+        }
+        }
+   }
+
+
+@media (max-width:900px)and (min-width:700px){
+.Skill{
+grid-template-columns: auto auto auto auto auto;
+justify-content: center;
+}
+}
+
+@media (max-width:700px)and (min-width:400px){
+    .Skill{
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    }
+    
+
+    }
+    @media (max-width:400px ){
+        .Skill{
+            grid-template-columns:auto auto;
+            justify-content: space-between;
+        }
+    }
+
