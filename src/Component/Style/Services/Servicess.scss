@@ -32,9 +32,12 @@
 
 }
 .CardMain{
-    background-color: black;
+    background-image: linear-gradient(to bottom right,  rgb(0, 0, 0), rgb(77, 1, 91));
+    margin: 10px;
     padding: 10px;
     box-shadow: 2px 3px 2px;
+    border: none;
+    border-radius: 15px;
     transition: 0.5s;
 }
 .CardMain:hover{
@@ -53,12 +56,14 @@
 .serviceImg{
     position: absolute;
     transition: 1s ease-in-out;
-
+    border-radius: 10px;
+    height: 200px;
     
 }
 .ServiceBtn{
    border: none;
     background-color: red;
+    text-align: center;
 }
 
 @media (max-width:1000px )and (min-width:700px){

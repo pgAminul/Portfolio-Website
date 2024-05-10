@@ -9,7 +9,7 @@
 
  
 .protfolioHeader{
-    background-color: black;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(84, 48, 71, 0.729),rgb(175, 35, 35));
     border-top: 2px solid gray;
     padding: 10px 0px 10px 0px;
     overflow: hidden;
@@ -17,7 +17,7 @@
 .prtfolioText{
     text-align: center;
     padding-top: 10px;
-    @include textColor();
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 .ProtfolioSecondHeader{

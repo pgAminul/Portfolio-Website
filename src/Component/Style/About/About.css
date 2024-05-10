@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .AboutMeHeader {
-  background-color: black;
-  padding: 10px 0px 20px 0px;
+  background-image: linear-gradient(to bottom left, rgb(6, 6, 6), rgba(27, 2, 21, 0.729), rgb(4, 19, 74));
+  padding: 10px 0px 0px 0px;
   border-top: 3px solid gray;
   color: white;
   text-align: center;
@@ -17,16 +17,26 @@
   width: 100%;
 }
 .AboutMeHeader .AboutContainer div .AboutImg {
-  height: 320px;
-  width: 200px;
   padding-top: 20px;
-  background-color: rgb(31, 27, 27);
   border-radius: 15px;
+  border-bottom: 2px solid rgb(72, 63, 63);
 }
 .AboutMeHeader .AboutContainer div .AboutName {
   margin: 20px 0px;
   font-family: "Briem Hand", cursive;
   font-optical-sizing: auto;
+}
+@media (max-width: 1000px) and (min-width: 951px) {
+  .AboutMeHeader .AboutImg {
+    height: 330px;
+    width: 280px;
+  }
+}
+@media (max-width: 950px) and (min-width: 800px) {
+  .AboutMeHeader .AboutImg {
+    height: 330px;
+    width: 280px;
+  }
 }
 @media (max-width: 799px) {
   .AboutMeHeader .AboutContainer {
@@ -36,10 +46,9 @@
     width: 100%;
   }
   .AboutMeHeader .AboutContainer div .AboutImg {
-    height: 250px;
-    width: 170px;
+    height: 300px;
+    width: 260px;
     padding-top: 20px;
-    background-color: rgb(31, 27, 27);
     border-radius: 15px;
   }
 }

@@ -3,6 +3,15 @@ import CounterUp from 'react-countup'
 import ScrollTigger from 'react-scroll-trigger'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Style/Services/Skill/Skill.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSass} from '@fortawesome/free-brands-svg-icons'
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaBootstrap } from "react-icons/fa6";
+import { IoLogoReact } from "react-icons/io5";
+import { SiRedux } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 function Counter() {
     const [counterUP, setCounterUp]=useState(false)
   return (
@@ -14,11 +23,12 @@ function Counter() {
 
             <div className='SkillChildHeader'> 
             <div className="outer">
-                <div className="inner">
+                <div className="inner"> 
                 {
         counterUP && 
         <div className='progressText'>
-            <img src="./Images/html.png" className='progressImg' alt="" /> <br />
+             <FaHtml5 className='html'/>
+          <br />
         <CounterUp start={0} end={95} duration={2} delay={0} />%
 
         </div>
@@ -48,7 +58,7 @@ function Counter() {
              {
     counterUP && 
     <div className='progressText'>
-            <img src="./Images/css.png" className='progressImg' alt="" /> <br />
+<IoLogoCss3 className='css'/> <br />
     <CounterUp start={0} end={85} duration={2} delay={0} />%
 
     </div>
@@ -77,7 +87,7 @@ function Counter() {
              {
     counterUP && 
     <div className='progressText'>
- <img src="./Images/javascript.png" className='progressImg' alt="" /> <br />
+      <IoLogoJavascript className='javascript'/> <br />
     <CounterUp start={0} end={90} duration={2} delay={0} />%
 
     </div>
@@ -107,7 +117,7 @@ function Counter() {
              {
     counterUP && 
     <div className='progressText'>
- <img src="./Images/bootstrap.png" className='progressImg' alt="" /> <br />
+      <FaBootstrap className='bootstrap'/> <br />
     <CounterUp start={0} end={80} duration={2} delay={0} />%
 
     </div>
@@ -139,7 +149,7 @@ function Counter() {
                 {
         counterUP && 
         <div className='progressText'>
-            <img src="./Images/scss.png" className='progressImg' alt="" /> <br />
+         <FontAwesomeIcon icon={faSass} className='scss'/> <br />
         <CounterUp start={0} end={75} duration={2} delay={0} />%
 
         </div>
@@ -169,7 +179,7 @@ function Counter() {
              {
     counterUP && 
     <div className='progressText'>
-            <img src="./Images/react.png" className='progressImg' alt="" /> <br />
+      <IoLogoReact className='react'/> <br />
     <CounterUp start={0} end={80} duration={2} delay={0} />%
 
     </div>
@@ -198,7 +208,7 @@ function Counter() {
              {
     counterUP && 
     <div className='progressText'>
- <img src="./Images/redux.png" className='progressImg' alt="" /> <br />
+      <SiRedux className='redux'/> <br />
     <CounterUp start={0} end={80} duration={2} delay={0} />%
 
     </div>
@@ -228,7 +238,7 @@ function Counter() {
              {
     counterUP && 
     <div className='progressText'>
- <img src="./Images/typescript.png" className='progressImg' alt="" /> <br />
+      <SiTypescript className='typescript'/> <br />
     <CounterUp start={0} end={85} duration={2} delay={0} />%
 
     </div>

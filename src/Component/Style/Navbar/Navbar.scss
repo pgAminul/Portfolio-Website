@@ -4,8 +4,8 @@
 @mixin Flex{
     display: grid;
     grid-template-columns: auto auto;
-    background-color: rgba(0, 0, 0, 0.046);
-   background-color: rgba(3, 3, 3, 0.402);
+    background-color: rgba(0, 0, 0, 0.844);
+   background-color: rgba(3, 3, 3, 0.842);
     
 }
 @mixin NavBg{
@@ -106,15 +106,15 @@
  .Container{
     grid-template-columns: auto;
     height: 80px;
+    position: fixed;
+   z-index:1001;
+
 
  }
  .bgnav{
-    background-color: rgba(0, 0, 0, 0.197);
+    background-color: rgba(0, 0, 0, 0.809);
    padding: 20px;
-   z-index:1000;
 
-width: 100%;
-position: fixed
 
 
  }

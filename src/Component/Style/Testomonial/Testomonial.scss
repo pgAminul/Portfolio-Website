@@ -11,7 +11,7 @@ body {
     padding: 0;
     background-color: black;
 
-  }
+  } 
   .testomonialHead{
     border-top: 3px solid gray;
     padding-top: 16px;
@@ -32,10 +32,8 @@ body {
     height: 370px;
     color: rgb(255, 255, 255);
     padding: 10px;
-    background-image: url('./Images/slider.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to bottom right, rgb(7, 4, 38),rgb(62, 20, 20));
+    
     
   }
 

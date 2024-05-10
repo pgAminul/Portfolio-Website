@@ -1,7 +1,7 @@
 
 .HeaderSkill{
    margin: 20px 0px;
-   background-color: rgba(0, 0, 0, 0.239);
+   background-color: rgba(0, 0, 0, 0.675);
    padding: 20px;
    
 }
@@ -50,7 +50,7 @@ width: 90px;
                 -0.5px -0.5px 0px rgb(128, 128, 128);
 }
 .progressImg{
-    width: 25px;
+    width: 28px;
 }
 .progressText{
     color: white;
@@ -67,6 +67,39 @@ width: 90px;
     color: white;
     text-align: center;
     margin-top: 5px;
+}
+.html{
+    color:#E54C25;
+    font-size: 25px;
+
+}
+.css{
+    color:#369AD6;
+    font-size: 25px;
+}
+.javascript{
+    color:#FDCD00;
+    font-size: 25px;
+}
+.bootstrap{
+    color:#8514fd;
+    font-size: 25px;
+}
+.scss{
+    color:#E98CB8;
+    font-size: 25px;
+}
+.react{
+    color:#7FBEED;
+    font-size: 25px;
+}
+.redux{
+    color:#8629BF;
+    font-size: 25px;
+}
+.typescript{
+    color:#0078CF;
+    font-size: 25px;
 }
 @mixin forHtml{
    fill: none;
@@ -149,7 +182,7 @@ width: 90px;
 
     .forBoostrap{
         animation: animBoos 2s linear forwards;
-        stroke:#26113C;
+        stroke:#7028be;
         @keyframes animBoos {
             0%{
            stroke-dashoffset: 354;

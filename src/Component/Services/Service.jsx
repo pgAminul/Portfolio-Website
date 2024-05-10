@@ -18,7 +18,7 @@ function Service() {
             return str.slice(0, num) + '...'
         }else{
             return str
-        }  
+        }   
     }
   
   return (
