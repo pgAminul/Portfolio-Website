@@ -1,6 +1,6 @@
 .HeaderSkill {
   margin: 20px 0px;
-  background-color: rgba(0, 0, 0, 0.675);
+  background-image: linear-gradient(to bottom right, rgb(16, 21, 21), rgb(33, 38, 44), black);
   padding: 20px;
 }
 

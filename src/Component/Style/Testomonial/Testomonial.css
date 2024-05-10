@@ -33,7 +33,7 @@ body {
   height: 370px;
   color: rgb(255, 255, 255);
   padding: 10px;
-  background-image: linear-gradient(to bottom right, rgb(7, 4, 38), rgb(62, 20, 20));
+  background-image: linear-gradient(to bottom right, rgb(12, 6, 80), rgb(62, 20, 20));
 }
 
 .swiper-slide img {
@@ -60,5 +60,7 @@ body {
   .swiper-slide {
     background-image: none;
     width: 300px;
+    height: 430px;
+    background-image: linear-gradient(to bottom right, rgb(12, 6, 80), rgb(62, 20, 20));
   }
 }/*# sourceMappingURL=Testomonial.css.map */
