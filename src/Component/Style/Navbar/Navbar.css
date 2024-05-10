@@ -90,7 +90,6 @@
   .Container {
     grid-template-columns: auto;
     height: 80px;
-    position: fixed;
     z-index: 1001;
   }
   .bgnav {
