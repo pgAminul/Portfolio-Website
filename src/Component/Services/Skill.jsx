@@ -12,6 +12,7 @@ import { FaBootstrap } from "react-icons/fa6";
 import { IoLogoReact } from "react-icons/io5";
 import { SiRedux } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
+import { SiJquery } from "react-icons/si";
 function Counter() {
     const [counterUP, setCounterUp]=useState(false)
   return (
@@ -247,6 +248,36 @@ function Counter() {
 } 
             </div>
             <p className="skillTag">TYPESCRIPT</p>
+<svg className='Svg' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+         <defs>
+            <linearGradient id="GradientColor">
+               <stop offset="0%"  />
+               <stop offset="100%"  />
+            </linearGradient>
+         </defs>
+         <circle className='forTypescript'cx="50" cy="50" r="40"   />
+ </svg>
+
+           </div>
+      </div>
+
+            {/* jquery Start Here  */}
+
+            <div className='SkillChildHeader'> 
+           <div className="outer">
+            <div className="inner">
+             {
+    counterUP && 
+    <div className='progressText'>
+      <SiJquery className='typescript'/> <br />
+    <CounterUp start={0} end={85} duration={2} delay={0} />%
+
+    </div>
+    
+
+} 
+            </div>
+            <p className="skillTag">JQUERY</p>
 <svg className='Svg' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
          <defs>
             <linearGradient id="GradientColor">
