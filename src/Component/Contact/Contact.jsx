@@ -11,6 +11,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 function Contact() {
@@ -102,10 +103,11 @@ function Contact() {
                 </form>
                 <div className="SocialMedia"data-aos="flip-right">
                 <a href="https://www.facebook.com/freelancerAminul1/ " target="_blank" className='facebook'><FaFacebook className='icons'/></a>
-                <a href="https://www.instagram.com/dj7cat/" target="_blank" ><img src="./Images/instagram.png"className='instagram icons' alt="" /></a>
+                <a href="https://www.instagram.com/webbyaminul/" target="_blank" ><img src="./Images/instagram.png"className='instagram icons' alt="" /></a>
                 <a href="https://www.linkedin.com/in/md-aminul-islam-showrov/" target="_blank" className='linkedin'><FaLinkedin className='icons'/></a>
                 <a href="https://wa.me/60132194479" target="_blank" className='whatsapp'><FaSquareWhatsapp className='icons'/></a>
                 <a href="https://t.me/Web_Expert_Aminul" target="_blank" className='telegram'><FaTelegram className='icons'/></a>
+                <a href="https://twitter.com/aminul_islam_1" target="_blank" className='twitter'><FaXTwitter className='icons'/></a>
                 </div>
             </div>
  <ToastContainer

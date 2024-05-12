@@ -35,6 +35,10 @@ footer .contact {
   padding: 5px;
 }
 
+.twitter {
+  font-size: 20px;
+}
+
 @media (max-width: 1000px) and (min-width: 800px) {
   footer {
     font-size: 14px;

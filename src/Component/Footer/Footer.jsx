@@ -26,7 +26,7 @@ function Footer() {
      <a href="https://www.facebook.com/freelancerAminul1/ " target="_blank" ><FaFacebook  className='facebook contactIcon'/> Facebook</a>
      </Col>
      <Col className='contact social'>
-     <a href="https://www.instagram.com/dj7cat/" target="_blank" >< FaInstagramSquare className='instagram contactIcon' alt="" /> Instagram</a>
+     <a href="https://www.instagram.com/webbyaminul/" target="_blank" >< FaInstagramSquare className='instagram contactIcon' alt="" /> Instagram</a>
      </Col>
      <Col className='contact social'>
      <a href="https://www.linkedin.com/in/md-aminul-islam-showrov/" target="_blank" ><FaLinkedin className='linkedin contactIcon'/> Linkedin</a>
