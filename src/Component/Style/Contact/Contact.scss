@@ -10,8 +10,8 @@
     color: black;
 }
 .formError{
-    color: red;
-    text-align: left;
+    color: rgb(234, 255, 0);
+    text-align: left; 
     
 }
 .contactHeader{
@@ -24,8 +24,10 @@
 
     .ContainerHeaderChild{
         border-top: 3px solid gray;
-        background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.612));
-        width: 100%;
+        background: rgba( 23, 27, 24, 0.5 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
     }
     .ContactTitle{
         font-family: "Libre Baskerville", serif;
@@ -62,9 +64,9 @@
             margin-top: 10px;
             padding: 8px;
             background-color: transparent;
-            color: white;
-            border: 1px solid white;
+            color: yellow;
             outline: none;
+            border: 1px solid yellow;
             font-size: 15px;
             border-radius: 10px;
             text-align: center;
@@ -73,6 +75,7 @@
         button:hover{
             background-color: red;
             border: 1px solid red;
+            color: white;
         }
         @media (max-width:800px)and (min-width:400px){
             input{
