@@ -23,7 +23,7 @@ function Footer() {
     <div className="ContactInfo">
      <h3>Follow Me</h3>
      <Col className='contact social'>
-     <a href="https://www.facebook.com/freelancerAminul1/ " target="_blank" ><FaFacebook  className='facebook contactIcon'/> Facebook</a>
+     <a href="https://www.facebook.com/profile.php?id=100032484008187 " target="_blank" ><FaFacebook  className='facebook contactIcon'/> Facebook</a>
      </Col>
      <Col className='contact social'>
      <a href="https://www.instagram.com/webbyaminul/" target="_blank" >< FaInstagramSquare className='instagram contactIcon' alt="" /> Instagram</a>

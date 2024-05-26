@@ -102,7 +102,7 @@ function Contact() {
                     <button data-aos="zoom-out" type="submit">Submit</button>
                 </form>
                 <div className="SocialMedia"data-aos="flip-right">
-                <a href="https://www.facebook.com/freelancerAminul1/ " target="_blank" className='facebook'><FaFacebook className='icons'/></a>
+                <a href="https://www.facebook.com/profile.php?id=100032484008187" target="_blank" className='facebook'><FaFacebook className='icons'/></a>
                 <a href="https://www.instagram.com/webbyaminul/" target="_blank" ><img src="./Images/instagram.png"className='instagram icons' alt="" /></a>
                 <a href="https://www.linkedin.com/in/md-aminul-islam-showrov/" target="_blank" className='linkedin'><FaLinkedin className='icons'/></a>
                 <a href="https://wa.me/60132194479" target="_blank" className='whatsapp'><FaSquareWhatsapp className='icons'/></a>
